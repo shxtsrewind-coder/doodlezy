@@ -43,7 +43,7 @@ Same setup as the other games:
 1. Push this repo to GitHub.
 2. In Cloudflare, create a Worker from the repo. Build command `npm run build`, deploy command `npx wrangler deploy` (see `wrangler.jsonc`).
 3. Optional: the `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` build variables. Without them the game uses the shared bgameworld project (its URL and publishable key are built in).
-4. Add the custom domain `doodlezy.bgameworld.com`.
+4. The custom domain `doodlezy.bgameworld.com` is set in `wrangler.jsonc`, so the first deploy attaches it.
 5. In Google Search Console, submit `https://doodlezy.bgameworld.com/sitemap.xml`.
 
 ## SEO
